@@ -10,18 +10,32 @@
 		625C33CF1CEE2DD500C10843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C33CE1CEE2DD500C10843 /* AppDelegate.swift */; };
 		625C33D11CEE2DD500C10843 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C33D01CEE2DD500C10843 /* ViewController.swift */; };
 		625C33D41CEE2DD500C10843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625C33D21CEE2DD500C10843 /* Main.storyboard */; };
-		625C33D61CEE2DD500C10843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625C33D51CEE2DD500C10843 /* Assets.xcassets */; };
 		625C33D91CEE2DD500C10843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625C33D71CEE2DD500C10843 /* LaunchScreen.storyboard */; };
+		625C33E41CEE4DF100C10843 /* Vinos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C33E31CEE4DF100C10843 /* Vinos.swift */; };
+		625C33E71CEE509A00C10843 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C33E61CEE509A00C10843 /* LoginManager.swift */; };
+		625C33ED1CEEE54C00C10843 /* VinoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C33EC1CEEE54C00C10843 /* VinoCollectionViewCell.swift */; };
+		625C33EF1CEEE59F00C10843 /* VinoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C33EE1CEEE59F00C10843 /* VinoViewController.swift */; };
+		625C33F11CEEE5E600C10843 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C33F01CEEE5E600C10843 /* DetailViewController.swift */; };
+		625C33F31CF2BA9A00C10843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625C33F21CF2BA9A00C10843 /* Assets.xcassets */; };
+		9B8D4EEABEB0697BED26218A /* Pods_VinoLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9CCED788876619CA2A26C5 /* Pods_VinoLog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D66BE12C777D759C99DCE24 /* Pods-VinoLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinoLog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VinoLog/Pods-VinoLog.debug.xcconfig"; sourceTree = "<group>"; };
+		2DF51AAE5C3DBAFED2F94670 /* Pods-VinoLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinoLog.release.xcconfig"; path = "Pods/Target Support Files/Pods-VinoLog/Pods-VinoLog.release.xcconfig"; sourceTree = "<group>"; };
 		625C33CB1CEE2DD500C10843 /* VinoLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinoLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		625C33CE1CEE2DD500C10843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		625C33D01CEE2DD500C10843 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		625C33D31CEE2DD500C10843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		625C33D51CEE2DD500C10843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		625C33D81CEE2DD500C10843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		625C33DA1CEE2DD500C10843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		625C33E31CEE4DF100C10843 /* Vinos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vinos.swift; sourceTree = "<group>"; };
+		625C33E61CEE509A00C10843 /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		625C33EC1CEEE54C00C10843 /* VinoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VinoCollectionViewCell.swift; sourceTree = "<group>"; };
+		625C33EE1CEEE59F00C10843 /* VinoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VinoViewController.swift; sourceTree = "<group>"; };
+		625C33F01CEEE5E600C10843 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		625C33F21CF2BA9A00C10843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D9CCED788876619CA2A26C5 /* Pods_VinoLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VinoLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8D4EEABEB0697BED26218A /* Pods_VinoLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		231A2B115A3A8D1F54B78AD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D66BE12C777D759C99DCE24 /* Pods-VinoLog.debug.xcconfig */,
+				2DF51AAE5C3DBAFED2F94670 /* Pods-VinoLog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		625C33C21CEE2DD500C10843 = {
 			isa = PBXGroup;
 			children = (
 				625C33CD1CEE2DD500C10843 /* VinoLog */,
 				625C33CC1CEE2DD500C10843 /* Products */,
+				231A2B115A3A8D1F54B78AD6 /* Pods */,
+				CAD14B5FBE12FF37D27BE801 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +82,33 @@
 			children = (
 				625C33CE1CEE2DD500C10843 /* AppDelegate.swift */,
 				625C33D01CEE2DD500C10843 /* ViewController.swift */,
+				625C33EE1CEEE59F00C10843 /* VinoViewController.swift */,
+				625C33EC1CEEE54C00C10843 /* VinoCollectionViewCell.swift */,
+				625C33F01CEEE5E600C10843 /* DetailViewController.swift */,
 				625C33D21CEE2DD500C10843 /* Main.storyboard */,
-				625C33D51CEE2DD500C10843 /* Assets.xcassets */,
 				625C33D71CEE2DD500C10843 /* LaunchScreen.storyboard */,
 				625C33DA1CEE2DD500C10843 /* Info.plist */,
+				625C33F21CF2BA9A00C10843 /* Assets.xcassets */,
+				625C33E51CEE4DFA00C10843 /* Model */,
+				625C33E61CEE509A00C10843 /* LoginManager.swift */,
 			);
 			path = VinoLog;
+			sourceTree = "<group>";
+		};
+		625C33E51CEE4DFA00C10843 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				625C33E31CEE4DF100C10843 /* Vinos.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CAD14B5FBE12FF37D27BE801 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D9CCED788876619CA2A26C5 /* Pods_VinoLog.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 625C33DD1CEE2DD500C10843 /* Build configuration list for PBXNativeTarget "VinoLog" */;
 			buildPhases = (
+				8949C7A9741C0B75C00593F6 /* 📦 Check Pods Manifest.lock */,
 				625C33C71CEE2DD500C10843 /* Sources */,
 				625C33C81CEE2DD500C10843 /* Frameworks */,
 				625C33C91CEE2DD500C10843 /* Resources */,
+				73E6E2AE04A447BDA88A1778 /* 📦 Embed Pods Frameworks */,
+				59CAF9622DC98B4C509B8493 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,20 +174,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				625C33D91CEE2DD500C10843 /* LaunchScreen.storyboard in Resources */,
-				625C33D61CEE2DD500C10843 /* Assets.xcassets in Resources */,
+				625C33F31CF2BA9A00C10843 /* Assets.xcassets in Resources */,
 				625C33D41CEE2DD500C10843 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59CAF9622DC98B4C509B8493 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VinoLog/Pods-VinoLog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73E6E2AE04A447BDA88A1778 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VinoLog/Pods-VinoLog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8949C7A9741C0B75C00593F6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		625C33C71CEE2DD500C10843 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625C33E41CEE4DF100C10843 /* Vinos.swift in Sources */,
+				625C33E71CEE509A00C10843 /* LoginManager.swift in Sources */,
 				625C33D11CEE2DD500C10843 /* ViewController.swift in Sources */,
+				625C33ED1CEEE54C00C10843 /* VinoCollectionViewCell.swift in Sources */,
+				625C33EF1CEEE59F00C10843 /* VinoViewController.swift in Sources */,
 				625C33CF1CEE2DD500C10843 /* AppDelegate.swift in Sources */,
+				625C33F11CEEE5E600C10843 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +353,7 @@
 		};
 		625C33DE1CEE2DD500C10843 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D66BE12C777D759C99DCE24 /* Pods-VinoLog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VinoLog/Info.plist;
@@ -261,6 +365,7 @@
 		};
 		625C33DF1CEE2DD500C10843 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF51AAE5C3DBAFED2F94670 /* Pods-VinoLog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VinoLog/Info.plist;
@@ -289,6 +394,7 @@
 				625C33DF1CEE2DD500C10843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
