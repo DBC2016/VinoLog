@@ -10,7 +10,7 @@ import UIKit
 
 class VinoCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var vinoImageView    :UIImage!
+    @IBOutlet weak var vinoImageView    :UIImageView!
     @IBOutlet weak var vinoNameLabel    :UILabel!
     @IBOutlet weak var dateCreatedLabel :UILabel!
     

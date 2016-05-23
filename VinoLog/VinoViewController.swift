@@ -27,11 +27,18 @@ class VinoViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! VinoCollectionViewCell
         let currentVino = vinosArray[indexPath.row]
+        cell.vinoImageView.image = UIImage(named: getDocumentPathForFile(currentVino.vinoImage))
         cell.vinoNameLabel.text = currentVino.vinoName
         cell.dateCreatedLabel.text = "\(currentVino.created)"
         return cell
     }
 
+    private func getDocumentPathForFile(filename: String) -> String {
+        let docPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString
+        print("Path:\(docPath)")
+        return docPath.stringByAppendingPathComponent(filename)
+    }
+    
         //MARK: - Interactivity Methods
         
         

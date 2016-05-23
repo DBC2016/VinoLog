@@ -63,7 +63,16 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
         vino.vinoCompany = vinoCompanyTextField.text!
         vino.vinoVintage = vinoVintageTextField.text!
         vino.vinoVari = vinoVariTextField.text!
-//        vinoSelected!.vinoImage = vinoImageView.image!
+        if let image = vinoImageView.image {
+            let filename = getNewImageFilename()
+            let imagePath = getDocumentPathForFile(filename)
+            UIImagePNGRepresentation(image)?.writeToFile(imagePath, atomically: true)
+            vino.vinoImage = filename
+        } else {
+            print("No Image to Save")
+            
+        }
+        
         vino.vinoCategory = vinoCategoryTextField.text!
         vino.vinoDescrip = vinoDescripTextField.text!
         //vino DATE...
@@ -117,6 +126,7 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBAction func addButtonPressed(sender: UIButton) {
         print("Add")
         let vinoImageView = UIImageView(image: UIImage(named: "vinoIcon"))
+        vinoImageView.frame = CGRectMake(0, 0, 50, 50)
         vinoImageView.contentMode = .ScaleAspectFit
         let vinoCount = vinoRatingStackView.arrangedSubviews.count
         vinoRatingStackView.insertArrangedSubview(vinoImageView, atIndex: vinoCount - 1)
@@ -146,31 +156,18 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     //MARK: - SAVE FILE METHODS
     
-//    
-//    @IBAction private func saveButtonPressed(button: UIButton) {
-//        if let image = capturedImage.image {
-//            let imagePath = getDocumentPathForFile(getNewImageFilename())
-//            
-//            UIImagePNGRepresentation(image)!.writeToFile(imagePath, atomically: true)
-//        } else {
-//            print("No Image to Save")
-//            
-//        }
-//        
-//        
-//    }
-//    
-//    
-//    private func getNewImageFilename() -> String {
-//        return NSProcessInfo.processInfo().globallyUniqueString + ".png"
-//    }
-//    
-//    
-//    private func getDocumentPathForFile(filename: String) -> String {
-//        let docPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString
-//        print("Path:\(docPath)")
-//        return docPath.stringByAppendingPathComponent(filename)
-//    }
+    
+    
+    private func getNewImageFilename() -> String {
+        return NSProcessInfo.processInfo().globallyUniqueString + ".png"
+    }
+    
+    
+    private func getDocumentPathForFile(filename: String) -> String {
+        let docPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString
+        print("Path:\(docPath)")
+        return docPath.stringByAppendingPathComponent(filename)
+    }
     
     
     
@@ -207,18 +204,18 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
     
 //    // Better Understand difference between these functions and their use
 //    
-//    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-//        capturedImage.image = (info[UIImagePickerControllerOriginalImage] as! UIImage)
-//        picker.dismissViewControllerAnimated(true, completion: nil)
-//    }
-//    
-//    
-//    
-//    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-//        picker.dismissViewControllerAnimated(true, completion: nil)
-//        
-//    }
-//    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        vinoImageView.image = (info[UIImagePickerControllerOriginalImage] as! UIImage)
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        picker.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+//
     
     //MARK: - LIFE CYCLE METHODS
 
@@ -234,7 +231,7 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
             vinoCompanyTextField.text = vino.vinoCompany
             vinoVintageTextField.text = vino.vinoVintage
             vinoVariTextField.text = vino.vinoVari
-            //        vinoSelected!.vinoImage = vinoImageView.image!
+            vinoImageView.image = UIImage(named: getDocumentPathForFile(vino.vinoImage))
             vinoCategoryTextField.text = vino.vinoCategory
             vinoDescripTextField.text = vino.vinoDescrip
         } else {
@@ -243,7 +240,7 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
             vinoCompanyTextField.text = ""
             vinoVintageTextField.text = ""
             vinoVariTextField.text = ""
-            //        vinoSelected!.vinoImage = vinoImageView.image!
+            vinoImageView.image = nil
             vinoCategoryTextField.text = ""
             vinoDescripTextField.text = ""
         }
